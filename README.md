@@ -16,6 +16,18 @@ npm run build
 npm run preview
 ```
 
+## GitHub Pages
+
+GitHub Pages-adress: https://niyaas.github.io/portfolio-bollnas/
+
+Workflowen i `.github/workflows/deploy-pages.yml` bygger och publicerar sidan när ändringar pushas till `main`. GitHub Pages ska använda **GitHub Actions** som källa i repots inställningar.
+
+```sh
+npm run build:github
+```
+
+GitHub-bygget använder basadressen `/portfolio-bollnas/`. Det vanliga bygget och utvecklingsservern använder `/`. Kontaktvägen får en egen `index.html` så att direktlänkar och omladdningar fungerar även på GitHub Pages. Om fler sidvägar läggs till, uppdatera `scripts/prepare-github-pages.mjs`.
+
 ## Formatera koden
 
 ```sh

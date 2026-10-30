@@ -60,7 +60,7 @@ export default function WebsiteMockup({
           </div>
           <div className="mock-image">
             <img
-              src="/landscape.svg"
+              src={`${import.meta.env.BASE_URL}landscape.svg`}
               alt="Illustrerat hälsingelandskap med skog, berg och en stilla sjö"
             />
             <span className="image-label">

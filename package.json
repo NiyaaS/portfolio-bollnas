@@ -6,9 +6,10 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "build": "tsc -b && vite build",
+    "build:github": "tsc -b && vite build --mode github-pages && node scripts/prepare-github-pages.mjs",
     "preview": "vite preview --host 127.0.0.1",
-    "format": "prettier --write src public index.html vite.config.ts tsconfig.json package.json README.md .prettierrc.json",
-    "format:check": "prettier --check src public index.html vite.config.ts tsconfig.json package.json README.md .prettierrc.json"
+    "format": "prettier --write src public scripts .github/workflows index.html vite.config.ts tsconfig.json package.json README.md .prettierrc.json",
+    "format:check": "prettier --check src public scripts .github/workflows index.html vite.config.ts tsconfig.json package.json README.md .prettierrc.json"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",
