@@ -18,7 +18,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
 }
 * {
   box-sizing: border-box;
@@ -84,7 +84,7 @@ h3 {
 }
 p {
   line-height: 1.75;
-  color: #72756d;
+  color: #62685c;
 }
 .container {
   width: min(1160px, calc(100% - 96px));
@@ -106,7 +106,7 @@ p {
   min-height: 49px;
   padding: 14px 22px;
   border-radius: 7px;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 550;
   line-height: 1.4;
   transition:
@@ -133,7 +133,7 @@ p {
   background: #eceee5;
 }
 .eyebrow {
-  font-size: 10px;
+  font-size: 13px;
   letter-spacing: 1.7px;
   font-weight: 650;
   display: flex;
@@ -154,7 +154,7 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 13px;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 550;
 }
 .text-link:hover {
@@ -177,8 +177,21 @@ p {
   margin-bottom: 17px;
 }
 .section-heading > p {
-  font-size: 12px;
+  max-width: 360px;
+  font-size: 16px;
   padding-bottom: 3px;
+}
+
+.button svg,
+.text-link svg {
+  flex-shrink: 0;
+  transition: translate 200ms ease;
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .button:hover svg,
+  .text-link:hover svg {
+    translate: 3px -2px;
+  }
 }
 .purple {
   color: #a085bd;

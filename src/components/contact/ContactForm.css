@@ -9,7 +9,7 @@
   letter-spacing: -1px;
 }
 .form-intro {
-  font-size: 12px;
+  font-size: 16px;
   margin-top: 8px;
 }
 .contact-form-card form {
@@ -20,12 +20,12 @@
   flex-direction: column;
   gap: 8px;
   margin-bottom: 20px;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 500;
 }
 .contact-form-card label > span {
   display: contents;
-  font-size: 10px;
+  font-size: 13px;
   color: #909580;
   font-weight: 400;
 }
@@ -42,7 +42,7 @@
   color: #30372a;
   border-radius: 5px;
   padding: 12px;
-  font-size: 12px;
+  font-size: 16px;
   resize: vertical;
   line-height: 1.6;
 }
@@ -55,7 +55,7 @@
   justify-content: space-between;
 }
 .form-note {
-  font-size: 9px;
+  font-size: 12px;
   text-align: center;
   margin-top: 12px;
   color: #969b89;
@@ -67,7 +67,7 @@
   background: #eee6f6;
   border-radius: 5px;
   padding: 11px;
-  font-size: 10px;
+  font-size: 13px;
   margin-top: 20px;
   flex-wrap: wrap;
 }
@@ -77,14 +77,14 @@
   border-top: 1px solid #dfe2d5;
 }
 .inquiry-result h3 {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 12px;
 }
 .inquiry-result .button {
   margin-top: 12px;
 }
 .inquiry-result > p {
-  font-size: 10px;
+  font-size: 13px;
   margin-top: 10px;
 }
 @media (max-width: 1050px) {
@@ -100,7 +100,7 @@
     font-size: 24px;
   }
   .contact-form-card label {
-    font-size: 12px;
+    font-size: 16px;
   }
   .contact-form-card input,
   .contact-form-card textarea {

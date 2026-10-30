@@ -4,7 +4,7 @@
   min-height: 80vh;
 }
 .back-link {
-  font-size: 11px;
+  font-size: 14px;
   color: #85897d;
 }
 .back-link:hover {
@@ -50,14 +50,14 @@
 }
 .contact-person strong {
   display: block;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 500;
 }
 .contact-person div > span {
   display: flex;
   align-items: center;
   gap: 5px;
-  font-size: 10px;
+  font-size: 13px;
   color: #888e7e;
   margin-top: 6px;
 }
@@ -68,7 +68,7 @@
   max-width: 330px;
 }
 .contact-template-note p {
-  font-size: 11px;
+  font-size: 14px;
   margin-top: 11px;
 }
 @media (max-width: 1050px) {
@@ -102,6 +102,6 @@
     padding-top: 20px;
   }
   .contact-template-note p {
-    font-size: 12px;
+    font-size: 16px;
   }
 }

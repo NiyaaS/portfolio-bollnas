@@ -1,4 +1,8 @@
 .price-card {
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    border-color 220ms ease;
   border: 1px solid #dddfd4;
   border-radius: 11px;
   padding: 29px 26px 25px;
@@ -6,6 +10,17 @@
   display: flex;
   flex-direction: column;
   background: #fafaf6;
+}
+
+.price-card:focus-within {
+  border-color: #ab88ce;
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .price-card:hover {
+    transform: translateY(-6px);
+    border-color: #b7a0ca;
+    box-shadow: 0 16px 35px -20px #49365445;
+  }
 }
 .price-card.featured {
   background: #eee7f7;
@@ -24,7 +39,7 @@
   background: #d9c6ef;
   color: #4d385e;
   border-radius: 5px;
-  font-size: 8px;
+  font-size: 12px;
   letter-spacing: 1.1px;
 }
 .price-card h3 {
@@ -32,7 +47,7 @@
   letter-spacing: -0.6px;
 }
 .price-subtitle {
-  font-size: 11px;
+  font-size: 14px;
   margin-top: 7px;
 }
 .price {
@@ -49,10 +64,10 @@
   line-height: 1.2;
 }
 .price > span {
-  font-size: 12px;
+  font-size: 16px;
 }
 .price .price-from {
-  font-size: 10px;
+  font-size: 13px;
   color: #7b7e72;
   margin-right: 0;
 }
@@ -62,7 +77,7 @@
   letter-spacing: -1.4px;
 }
 .price-meta {
-  font-size: 9px;
+  font-size: 12px;
   color: #8a8b80;
   margin-top: 7px;
 }
@@ -81,7 +96,7 @@
   display: flex;
   flex-direction: column;
   gap: 13px;
-  font-size: 11px;
+  font-size: 14px;
   color: #63695c;
 }
 .price-card li {
@@ -98,7 +113,7 @@
   margin-top: auto;
   width: 100%;
   min-height: 43px;
-  font-size: 11px;
+  font-size: 14px;
   justify-content: space-between;
 }
 @media (max-width: 1050px) {
@@ -132,6 +147,6 @@
     left: auto;
     right: 18px;
     padding-inline: 10px;
-    font-size: 7px;
+    font-size: 11px;
   }
 }

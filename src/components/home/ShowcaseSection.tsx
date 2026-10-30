@@ -71,7 +71,7 @@ export default function ShowcaseSection() {
           aria-labelledby={`demo-tab-${demo}`}
           className="showcase-demo"
         >
-          <WebsiteMockup variant={demo} large />
+          <WebsiteMockup key={demo} variant={demo} large />
           <div className="showcase-caption">
             <span>{demos[demo].description}</span>
             <span className="concept-label">DESIGNKONCEPT</span>

@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  font-size: 11px;
+  font-size: 14px;
   color: #808577;
   padding-bottom: 4px;
 }
@@ -21,7 +21,7 @@
   padding-top: 22px;
 }
 .step-number {
-  font-size: 12px;
+  font-size: 16px;
   color: #8d9482;
 }
 .process-grid h3 {
@@ -30,7 +30,7 @@
   margin: 16px 0 10px;
 }
 .process-grid p {
-  font-size: 12px;
+  font-size: 16px;
   max-width: 295px;
 }
 @media (max-width: 760px) {
@@ -38,7 +38,7 @@
     padding-block: 55px;
   }
   .process-aside {
-    font-size: 10px;
+    font-size: 13px;
   }
   .process-grid {
     grid-template-columns: 1fr;
@@ -59,6 +59,6 @@
   }
   .process-grid p {
     max-width: 100%;
-    font-size: 12px;
+    font-size: 16px;
   }
 }

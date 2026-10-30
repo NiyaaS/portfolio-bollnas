@@ -29,9 +29,8 @@ export default function Hero() {
           Jag hjälper dig att visa det på webben.
         </p>
         <p className="hero-detail text-pretty">
-          Moderna hemsidor för företag i Bollnäs med omnejd.
-          <br className="desktop-break" /> Personlig kontakt, enkel process och en bra
-          start online.
+          Från första skiss till lansering — vi hittar ett upplägg som passar din
+          verksamhet.
         </p>
         <div className="hero-actions">
           <Link className="button button-dark" to="/kontakt">
@@ -49,7 +48,7 @@ export default function Hero() {
         <div className="art-orbit" />
         <span className="art-spark">✳</span>
         <div className="hero-mockup">
-          <WebsiteMockup />
+          <WebsiteMockup variant={2} />
         </div>
         <div className="floating-note">
           <span className="floating-icon">

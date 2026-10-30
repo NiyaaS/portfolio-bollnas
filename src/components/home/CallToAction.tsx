@@ -8,9 +8,9 @@ export default function CallToAction() {
       <div>
         <span className="eyebrow">DITT NÄSTA STEG BÖRJAR HÄR</span>
         <h2>
-          Ska vi göra ditt företag
+          Har du en idé?
           <br />
-          lite mer synligt?
+          Jag hjälper dig vidare.
         </h2>
         <p>En idé, en fråga eller bara nyfiken? Vi börjar där.</p>
       </div>

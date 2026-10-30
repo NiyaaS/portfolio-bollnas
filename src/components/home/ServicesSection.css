@@ -14,16 +14,25 @@
   margin-bottom: 26px;
 }
 .service-top > span:last-child {
-  font-size: 10px;
+  font-size: 13px;
   color: #9b9d92;
 }
 .service-icon {
+  transition:
+    background 220ms ease,
+    transform 220ms ease;
   display: grid;
   place-items: center;
   width: 43px;
   height: 43px;
   background: #eeecef;
   border-radius: 10px;
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .service:hover .service-icon {
+    transform: translateY(-4px) rotate(-6deg);
+    background: #e3d5f6;
+  }
 }
 .service-icon svg {
   width: 20px;
@@ -36,13 +45,13 @@
   margin-bottom: 12px;
 }
 .service p {
-  font-size: 12px;
+  font-size: 16px;
   max-width: 300px;
 }
 .service-tag {
   display: block;
   margin-top: 20px;
-  font-size: 10px;
+  font-size: 13px;
   color: #414a37;
 }
 @media (max-width: 760px) {
@@ -72,10 +81,10 @@
   }
   .service p {
     max-width: none;
-    font-size: 12px;
+    font-size: 16px;
   }
   .service-tag {
     margin-top: 14px;
-    font-size: 10px;
+    font-size: 13px;
   }
 }

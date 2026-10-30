@@ -27,7 +27,7 @@
   text-align: left;
   gap: 20px;
   padding: 20px 0;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 500;
 }
 .faq-item button svg {
@@ -35,7 +35,7 @@
   color: #777e6d;
 }
 .faq-item p {
-  font-size: 11px;
+  font-size: 14px;
   padding-bottom: 22px;
   max-width: 420px;
   line-height: 1.85;
@@ -56,11 +56,11 @@
     font-size: 30px;
   }
   .faq-item button {
-    font-size: 12px;
+    font-size: 16px;
     padding-block: 19px;
   }
   .faq-item p {
-    font-size: 12px;
+    font-size: 16px;
     max-width: 100%;
   }
 }

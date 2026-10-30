@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 11px;
+  font-size: 14px;
   color: #5e6557;
 }
 .benefit-inner svg {
@@ -27,7 +27,7 @@
     padding-block: 22px;
   }
   .benefit-inner > span {
-    font-size: 10px;
+    font-size: 13px;
     gap: 8px;
   }
   .benefit-inner > span:nth-child(even) {
