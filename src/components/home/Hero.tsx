@@ -41,7 +41,7 @@ export default function Hero() {
           </a>
         </div>
         <div className="hero-footnote">
-          <MapPin size={14} /> Bollnäs, Hälsingland <span>·</span> Nära till ett samtal.
+          <MapPin size={14} /> Bollnäs — hjärtat av Hälsingland.
         </div>
       </div>
       <div className="hero-art">
