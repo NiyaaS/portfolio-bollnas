@@ -1,0 +1,125 @@
+.showcase-section {
+  background: #eeede8;
+  padding: 79px 0;
+}
+.showcase-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 85px;
+  align-items: center;
+}
+.showcase-copy h2 {
+  margin: 17px 0 20px;
+}
+.showcase-copy > p {
+  font-size: 12px;
+  max-width: 285px;
+}
+.demo-tabs {
+  margin-top: 27px;
+  display: flex;
+  flex-direction: column;
+}
+.demo-tabs button {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dcdcd3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  font-size: 11px;
+  color: #85867d;
+  text-align: left;
+}
+.demo-tabs button svg {
+  opacity: 0.5;
+}
+.demo-tabs button.active {
+  font-weight: 600;
+  color: #2b3128;
+}
+.demo-tabs button.active svg {
+  opacity: 1;
+}
+.demo-tabs button:hover {
+  color: #775198;
+}
+.showcase-copy .demo-disclaimer {
+  font-size: 9px;
+  color: #8a8b82;
+  margin-top: 19px;
+}
+.showcase-demo {
+  min-width: 0;
+}
+.showcase-caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+  margin-top: 19px;
+  color: #7e8176;
+  font-size: 10px;
+  line-height: 1.7;
+}
+.showcase-caption > span:first-child {
+  max-width: 330px;
+}
+.concept-label {
+  font-size: 7px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  border: 1px solid #d7d9ce;
+  padding: 3px 6px;
+  border-radius: 3px;
+}
+@media (max-width: 1050px) {
+  .showcase-grid {
+    gap: 45px;
+  }
+}
+@media (max-width: 760px) {
+  .showcase-section {
+    padding-block: 58px;
+  }
+  .showcase-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+  .showcase-copy > p {
+    max-width: 100%;
+  }
+  .demo-tabs {
+    flex-direction: row;
+    gap: 13px;
+    margin-top: 20px;
+  }
+  .demo-tabs button {
+    font-size: 9px;
+    gap: 5px;
+    padding-block: 13px;
+    flex: 1;
+    line-height: 1.5;
+  }
+  .demo-tabs button svg {
+    width: 13px;
+    flex-shrink: 0;
+  }
+  .showcase-copy .demo-disclaimer {
+    font-size: 8px;
+    margin-top: 13px;
+  }
+  .showcase-demo {
+    max-width: 570px;
+    width: 100%;
+    margin: auto;
+  }
+  .showcase-caption {
+    font-size: 9px;
+    gap: 12px;
+  }
+  .concept-label {
+    font-size: 6px;
+  }
+}

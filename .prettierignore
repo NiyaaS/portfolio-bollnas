@@ -1,0 +1,7 @@
+node_modules/
+dist/
+outputs/
+.npm-cache/
+.sites-runtime/
+package-lock.json
+*.tsbuildinfo

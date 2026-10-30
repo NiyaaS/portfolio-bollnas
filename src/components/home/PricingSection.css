@@ -1,0 +1,27 @@
+.pricing-section {
+  padding-top: 96px;
+}
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  padding-top: 14px;
+}
+.pricing-note {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 24px;
+  line-height: 1.8;
+  color: #8b8d81;
+}
+@media (max-width: 760px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 27px;
+    padding-top: 8px;
+  }
+  .pricing-note {
+    font-size: 9px;
+    margin-top: 21px;
+  }
+}

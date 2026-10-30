@@ -1,0 +1,14 @@
+.not-found {
+  min-height: 60vh;
+  padding-block: 100px;
+}
+.not-found h1 {
+  font-size: 48px;
+  letter-spacing: -2px;
+  margin-block: 20px 30px;
+}
+@media (max-width: 760px) {
+  .not-found h1 {
+    font-size: 36px;
+  }
+}

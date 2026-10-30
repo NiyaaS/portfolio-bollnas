@@ -1,0 +1,36 @@
+.benefit-band {
+  border-block: 1px solid #e3e5db;
+  background: #f0f1e9;
+}
+.benefit-inner {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 24px;
+}
+.benefit-inner > span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  color: #5e6557;
+}
+.benefit-inner svg {
+  width: 15px;
+  height: 15px;
+  stroke-width: 1.5;
+}
+@media (max-width: 760px) {
+  .benefit-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-block: 22px;
+  }
+  .benefit-inner > span {
+    font-size: 10px;
+    gap: 8px;
+  }
+  .benefit-inner > span:nth-child(even) {
+    justify-self: end;
+  }
+}

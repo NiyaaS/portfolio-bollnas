@@ -1,0 +1,137 @@
+.price-card {
+  border: 1px solid #dddfd4;
+  border-radius: 11px;
+  padding: 29px 26px 25px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #fafaf6;
+}
+.price-card.featured {
+  background: #eee7f7;
+  border-color: #c9b3e5;
+}
+.popular-label {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: -14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 7px 8px;
+  background: #d9c6ef;
+  color: #4d385e;
+  border-radius: 5px;
+  font-size: 8px;
+  letter-spacing: 1.1px;
+}
+.price-card h3 {
+  font-size: 20px;
+  letter-spacing: -0.6px;
+}
+.price-subtitle {
+  font-size: 11px;
+  margin-top: 7px;
+}
+.price {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  margin-top: 29px;
+}
+.price strong {
+  font-family: 'Manrope', sans-serif;
+  font-size: 40px;
+  font-weight: 650;
+  letter-spacing: -1.8px;
+  line-height: 1.2;
+}
+.price > span {
+  font-size: 12px;
+}
+.price .price-from {
+  font-size: 10px;
+  color: #7b7e72;
+  margin-right: 0;
+}
+.price .quote-price {
+  font-size: 31px;
+  line-height: 1.55;
+  letter-spacing: -1.4px;
+}
+.price-meta {
+  font-size: 9px;
+  color: #8a8b80;
+  margin-top: 7px;
+}
+.price-divider {
+  height: 1px;
+  background: #dedfd5;
+  margin: 23px 0;
+}
+.featured .price-divider {
+  background: #d9cde8;
+}
+.price-card ul {
+  padding: 0;
+  margin: 0 0 29px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  font-size: 11px;
+  color: #63695c;
+}
+.price-card li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.price-card li svg {
+  flex-shrink: 0;
+  color: #646f53;
+  stroke-width: 1.5;
+}
+.price-card .button {
+  margin-top: auto;
+  width: 100%;
+  min-height: 43px;
+  font-size: 11px;
+  justify-content: space-between;
+}
+@media (max-width: 1050px) {
+  .price-card {
+    padding-inline: 20px;
+  }
+  .price strong {
+    font-size: 35px;
+  }
+  .price .quote-price {
+    font-size: 28px;
+  }
+}
+@media (max-width: 760px) {
+  .price-card {
+    padding: 26px;
+  }
+  .price {
+    margin-top: 20px;
+  }
+  .price strong {
+    font-size: 40px;
+  }
+  .price .quote-price {
+    font-size: 30px;
+  }
+  .price-card ul {
+    gap: 12px;
+  }
+  .popular-label {
+    left: auto;
+    right: 18px;
+    padding-inline: 10px;
+    font-size: 7px;
+  }
+}
