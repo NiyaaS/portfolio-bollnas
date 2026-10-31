@@ -85,9 +85,6 @@
     background: radial-gradient(ellipse at 30% 30%, #e4d8f4, #eeece8 65%);
     animation: orbit-breathe 6s ease-in-out 2;
   }
-  .art-spark {
-    animation: spark-turn 8s ease-in-out;
-  }
   .highlight svg path {
     stroke-dasharray: 310;
     animation: draw-underline 1s ease 350ms backwards;
@@ -122,10 +119,10 @@
   }
   @keyframes spark-turn {
     from {
-      rotate: 0deg;
+      transform: rotate(14deg);
     }
     to {
-      rotate: 180deg;
+      transform: rotate(194deg);
     }
   }
   @keyframes draw-underline {
@@ -135,6 +132,11 @@
     to {
       stroke-dashoffset: 0;
     }
+  }
+}
+@media (min-width: 761px) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .art-spark {
+    animation: spark-turn 8s ease-in-out;
   }
 }
 .hero-footnote {
@@ -310,6 +312,8 @@
     font-size: 12px;
   }
   .art-spark {
+    animation: none;
+    transform: rotate(14deg);
     right: 5px;
     top: 10px;
     font-size: 55px;

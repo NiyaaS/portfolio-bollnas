@@ -62,6 +62,8 @@
     font-size: 14px;
   }
   .cta-star {
+    transform: none;
+    transition: none;
     right: -40px;
     top: 60px;
     font-size: 200px;

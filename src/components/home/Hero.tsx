@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { ArrowUpRight, MapPin, Check, CornerDownRight } from 'lucide-react'
 import ArrowDownIcon from '../ui/ArrowDownIcon'
 import WebsiteMockup from '../WebsiteMockup'
+import DecorativeStar from '../ui/DecorativeStar'
 
 export default function Hero() {
   return (
@@ -46,7 +47,7 @@ export default function Hero() {
       </div>
       <div className="hero-art">
         <div className="art-orbit" />
-        <span className="art-spark">✳</span>
+        <DecorativeStar className="art-spark" />
         <div className="hero-mockup">
           <WebsiteMockup variant={2} />
         </div>

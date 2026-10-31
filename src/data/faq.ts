@@ -5,7 +5,11 @@ export const questions = [
   ],
   [
     'Vad behöver jag ordna själv?',
-    'Framför allt en bild av vad du vill berätta. Logotyp, texter och bilder är bra om du har dem. Saknas något går vi igenom det tillsammans och bestämmer vad som behövs innan vi börjar.',
+    'Du lämnar färdiga texter, bilder som du har rätt att använda, kontaktuppgifter och eventuell logotyp. Startpaketet omfattar upp till fem bilder och Företagspaketet upp till tio. Behöver du hjälp med texter, bilder eller en ny logotyp får du en separat offert.',
+  ],
+  [
+    'Varför erbjuder du introduktionspriser?',
+    'Jag bygger upp min kundportfölj och erbjuder därför ett Startpaket för 2 900 kr och ett Företagspaket för 4 900 kr till mina första kunder. Priserna är engångspriser exklusive moms för den beskrivna omfattningen.',
   ],
   [
     'Ingår domän och drift i priset?',

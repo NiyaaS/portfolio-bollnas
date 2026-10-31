@@ -1,6 +1,7 @@
 import './CallToAction.css'
 import { Link } from 'react-router-dom'
 import { ArrowUpRight } from 'lucide-react'
+import DecorativeStar from '../ui/DecorativeStar'
 
 export default function CallToAction() {
   return (
@@ -17,9 +18,7 @@ export default function CallToAction() {
       <Link to="/kontakt" className="button button-dark">
         Låt oss prata <ArrowUpRight size={19} />
       </Link>
-      <span className="cta-star" aria-hidden="true">
-        ✳
-      </span>
+      <DecorativeStar className="cta-star" />
     </section>
   )
 }

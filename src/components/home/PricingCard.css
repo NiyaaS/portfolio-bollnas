@@ -101,8 +101,17 @@
 }
 .price-card li {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 9px;
+}
+.price-card li {
+  line-height: 1.65;
+}
+.price-card li svg {
+  margin-top: 4px;
+}
+.price-card ul {
+  font-size: 16px;
 }
 .price-card li svg {
   flex-shrink: 0;
@@ -144,7 +153,7 @@
     gap: 12px;
   }
   .popular-label {
-    left: auto;
+    left: 18px;
     right: 18px;
     padding-inline: 10px;
     font-size: 11px;

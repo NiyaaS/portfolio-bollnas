@@ -1,0 +1,14 @@
+import './DecorativeStar.css'
+
+export default function DecorativeStar({ className = '' }: { className?: string }) {
+  return (
+    <svg
+      className={`decorative-star ${className}`}
+      viewBox="0 0 100 100"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path d="M44 0h12v35l25-25 9 9-25 25h35v12H65l25 25-9 9-25-25v35H44V65L19 90l-9-9 25-25H0V44h35L10 19l9-9 25 25Z" />
+    </svg>
+  )
+}

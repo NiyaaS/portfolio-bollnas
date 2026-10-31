@@ -7,28 +7,19 @@ type PricingCardProps = { pack: PricingPackage }
 
 export default function PricingCard({ pack }: PricingCardProps) {
   return (
-    <article className={`price-card ${pack.popular ? 'featured' : ''}`}>
-      {pack.popular && (
+    <article className={`price-card ${pack.featured ? 'featured' : ''}`}>
+      {pack.featured && (
         <span className="popular-label">
-          <Sparkles size={12} /> FÖR DIG SOM VILL VISA MER
+          <Sparkles size={12} /> MER UTRYMME FÖR DITT FÖRETAG
         </span>
       )}
       <h3>{pack.name}</h3>
       <p className="price-subtitle">{pack.subtitle}</p>
       <div className="price">
-        {pack.price ? (
-          <>
-            <span className="price-from">Från</span>
-            <strong>{pack.price}</strong>
-            <span>kr</span>
-          </>
-        ) : (
-          <strong className="quote-price">Enligt offert</strong>
-        )}
+        <strong>{pack.price}</strong>
+        <span>kr</span>
       </div>
-      <span className="price-meta">
-        {pack.price ? 'Prisidé för ett engångsprojekt' : 'Ett förslag utifrån din idé'}
-      </span>
+      <span className="price-meta">Introduktionspris · engångspris exkl. moms</span>
       <div className="price-divider" />
       <ul>
         {pack.features.map((feature) => (
@@ -40,10 +31,10 @@ export default function PricingCard({ pack }: PricingCardProps) {
       </ul>
       <Link
         to={`/kontakt?paket=${encodeURIComponent(pack.name)}`}
-        className={`button ${pack.popular ? 'button-dark' : 'button-outline'}`}
+        className={`button ${pack.featured ? 'button-dark' : 'button-outline'}`}
         aria-label={pack.label}
       >
-        {pack.price ? 'Det här passar mig' : 'Låt oss prata'}
+        {pack.buttonText}
         <ArrowUpRight size={16} />
       </Link>
     </article>
