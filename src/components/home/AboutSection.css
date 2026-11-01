@@ -43,7 +43,7 @@
   color: #4c4357;
   line-height: 1;
 }
-.monogram > span {
+.monogram-star {
   position: absolute;
   font-size: 57px;
   right: -49px;
@@ -101,6 +101,11 @@
   }
   .monogram {
     font-size: 115px;
+  }
+  .monogram-star {
+    font-size: 46px;
+    right: -40px;
+    top: -14px;
   }
   .about-copy h2 {
     font-size: 31px;

@@ -1,6 +1,7 @@
 import './Footer.css'
 import { Link } from 'react-router-dom'
 import { ArrowUpRight } from 'lucide-react'
+import DecorativeStar from '../ui/DecorativeStar'
 
 export default function Footer() {
   return (
@@ -20,8 +21,9 @@ export default function Footer() {
       </div>
       <div className="footer-bottom">
         <span>© {new Date().getFullYear()} Niyakonh Sisouphanh</span>
-        <span>
-          Skapat med omtanke i Hälsingland <span className="purple">✳</span>
+        <span className="footer-credit">
+          Skapat med omtanke i Hälsingland
+          <DecorativeStar className="purple footer-star" />
         </span>
         <a href="#top">Till toppen ↑</a>
       </div>

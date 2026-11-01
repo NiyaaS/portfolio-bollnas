@@ -1,6 +1,7 @@
 import './WebsiteMockup.css'
 import { ArrowUpRight, ArrowRight } from 'lucide-react'
 import { demos } from '../data/demos'
+import DecorativeStar from './ui/DecorativeStar'
 
 export default function WebsiteMockup({
   variant = 0,
@@ -68,7 +69,7 @@ export default function WebsiteMockup({
               <br />
               Nära dig.
             </span>
-            <span className="image-star">✳</span>
+            <DecorativeStar className="image-star" />
           </div>
         </div>
         <div className="mock-footer">

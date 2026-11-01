@@ -26,10 +26,13 @@
   font-size: 12px;
   color: #8e9184;
 }
-.footer-bottom .purple {
+.footer-credit {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.footer-bottom .footer-star {
   font-size: 16px;
-  vertical-align: middle;
-  margin-left: 5px;
 }
 @media (max-width: 760px) {
   .footer-main {

@@ -1,13 +1,15 @@
 import './AboutSection.css'
 import { Link } from 'react-router-dom'
 import { ArrowUpRight, MapPin } from 'lucide-react'
+import DecorativeStar from '../ui/DecorativeStar'
 
 export default function AboutSection() {
   return (
     <section id="om" className="section container about-section">
       <div className="about-visual">
         <div className="monogram">
-          ns<span>✳</span>
+          ns
+          <DecorativeStar className="monogram-star" />
         </div>
         <span className="location-pill">
           <MapPin size={13} /> BOLLNÄS, HÄLSINGLAND
